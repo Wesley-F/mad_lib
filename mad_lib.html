@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!--
+This page makes a Mad Lib story. For an example of a similar page, go here:
+
+http://www.redkid.net/madlibs/
+-->
+
+<html>
+<head>
+<title>My MadLib</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+</head>
+
+<body>
+
+<h1 id="bigtitle" >My MadLib</h1>
+
+<div class="data">
+
+    <p class="instructions">Enter a value into each field. Then press 'Make Story' to read the story you made.</p>
+
+
+    <!--
+    Request that the user type in at least 15 words in the form below. Ask for the
+    words by part of speach (noun, verb, adjective, adverb, proper noun, etc.) You
+    can also ask for things like places. Use field ids like noun1, noun2, verb1, etc.
+
+    Then make a button with the text "Make Story". The Make Story button should call
+    your makeStory() function which gets all of the form data and then builds and
+    displays your finished story.
+    -->
+
+    <form>
+    Main Band Kid <br> <input type="text" id='band_kid1'> <br>
+    Verb ending in -ed <br> <input type="text" id='ed_verb1'> <br>
+    Adjective <br> <input type="text" id='adjective1'> <br>
+    Number <br> <input type="text" id='number1'> <br>
+    Band Kid <br> <input type="text" id='name1'> <br>
+    Band Kid <br> <input type="text" id='name2'> <br>
+    Verb <br> <input type="text" id='verb1'> <br>
+    Band Kid <br> <input type="text" id='name3'> <br>
+    Band Kid <br> <input type="text" id='name4'> <br>
+    Verb ending in -ing <br> <input type="text" id='ing_verb1'> <br>
+    Adjective <br> <input type="text" id='adjective2'> <br>
+    Noun <br> <input type="text" id='noun1'> <br>
+    Staff Member <br> <input type="text" id='staff1'> <br>
+    Verb <br> <input type="text" id='verb2'> <br>
+    Staff Member <br> <input type="text" id='staff2'> <br>
+    Verb <br> <input type="text" id='verb3'> <br>
+
+    <input type="button" onclick="makeStory()" value="Make Story">
+    </form>
+
+</div>
+
+<div class="story">
+    <p id="instructions">Complete the form to the left to see a story.</p>
+    <h2 id="title"></h2>
+    <p id="paragraph1"></p>
+    <p class="picture" id="picture"></p>
+
+</div>
+<!-- don't forget to link to the story_maker.js file here. -->
+  <script src="story_maker.js"></script>
+
+</body>
+</html>
